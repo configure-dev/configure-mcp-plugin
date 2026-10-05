@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "configure-mcp-plugin",
+  "version": "1.0.0",
+  "description": "Bring your saved project decisions, preferences, and goals into Cursor with Configure.",
+  "author": {
+    "name": "Configure",
+    "url": "https://configure.dev"
+  },
+  "homepage": "https://configure.dev",
+  "repository": "https://github.com/configure-dev/configure-mcp-plugin",
+  "keywords": [
+    "memory",
+    "context",
+    "projects",
+    "preferences",
+    "mcp"
+  ],
+  "license": "MIT"
+}

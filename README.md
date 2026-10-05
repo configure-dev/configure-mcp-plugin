@@ -1,8 +1,8 @@
-# Configure Memory for Cursor
+# Configure Memory
 
-Bring your project context into Cursor.
+Bring your saved project context into your current task.
 
-Configure gives Cursor the project decisions, preferences, and goals you have already saved. Start a build with its requirements in hand, follow your existing writing preferences, or pick up a project without explaining the background again.
+Configure gives your assistant the project decisions, preferences, and goals you have already saved. Start a build with its requirements in hand, follow your existing writing preferences, or pick up a project without explaining the background again.
 
 Your Configure profile can hold context you chose to keep while working with other AI tools. This plugin searches that profile and brings relevant details into your current task.
 
@@ -17,7 +17,9 @@ The included skill searches for context relevant to the task and saves facts whe
 
 ## Connect
 
-You need a Configure account with saved context. Complete Configure sign-in when Cursor prompts you and review the requested access.
+You need a Configure account with saved context. Complete Configure sign-in when your assistant prompts you and review the requested access.
+
+### Cursor
 
 This repository uses the Agent Plugins format supported by Cursor: `plugin.json`, `mcp.json`, and `skills/`. See the [Cursor plugin documentation](https://cursor.com/docs/reference/plugins) for installation options.
 
@@ -35,21 +37,34 @@ You can also add the server directly through Cursor's MCP settings:
 
 A direct MCP connection adds the tools. The full plugin also includes the context skill.
 
+### Kiro Power
+
+This package uses the Agent Plugins format documented by Kiro. Native Kiro installation, sign-in, and tool calls still need verification before catalog submission.
+
+To test a local copy in the Kiro IDE:
+
+1. Open the Powers panel and select **Add Custom Power**.
+2. Select **Import power from a folder** and choose the folder containing `plugin.json`.
+3. Select **Install**, then **Try the power**.
+4. Ask Kiro to use your saved Configure project context and complete Configure sign-in when prompted.
+
+Kiro Web also supports **Upload folder** in [Settings > Powers](https://app.kiro.dev/settings/powers/catalog). See the [Kiro installation guide](https://kiro.dev/docs/powers/installation/) for current client-specific steps.
+
 ## What is included
 
 - A connection to Configure's general MCP server at `https://mcp.configure.dev/`.
 - A skill for finding relevant saved context and handling explicit save requests.
-- Plugin metadata for Cursor.
+- Agent Plugins metadata.
 
 The package contains metadata and instructions. It has no backend source, credentials, executable scripts, or background hooks.
 
 ## Your data
 
-Configure returns context from the account you connect. Cursor sends tool arguments to Configure and receives the results. Saving sends the facts in your request to your Configure profile. Access is limited to the context available in that account; installing this plugin does not grant access to another assistant's private conversation history.
+Configure returns context from the account you connect. Your assistant sends tool arguments to Configure and receives the results. Saving sends the facts in your request to your Configure profile. Access is limited to the context available in that account; installing this plugin does not grant access to another assistant's private conversation history.
 
 The general server may also expose tools for apps you have linked separately. Those connections have their own permissions and are optional. The skill uses them only when relevant to your request. An empty memory search does not trigger a search of your email or calendar.
 
-Review Cursor's tool confirmations and Configure's sign-in permissions. Keep API keys, passwords, and other secrets out of memory requests. Manage your saved context and connections in Configure.
+Review your assistant's tool confirmations and Configure's sign-in permissions. Keep API keys, passwords, and other secrets out of memory requests. Manage your saved context and connections in Configure.
 
 ## Directory listings
 

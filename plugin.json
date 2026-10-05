@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "configure-mcp-plugin",
-  "version": "1.0.0",
-  "description": "Bring your saved project decisions, preferences, and goals into Cursor with Configure.",
+  "version": "1.0.1",
+  "description": "Bring your saved project decisions, preferences, and goals into your current task with Configure.",
   "author": {
     "name": "Configure",
     "url": "https://configure.dev"

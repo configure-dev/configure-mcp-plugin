@@ -51,6 +51,14 @@ The general server may also expose tools for apps you have linked separately. Th
 
 Review Cursor's tool confirmations and Configure's sign-in permissions. Keep API keys, passwords, and other secrets out of memory requests. Manage your saved context and connections in Configure.
 
+## Directory listings
+
+Find Configure Memory in these MCP directories:
+
+- [Smithery](https://smithery.ai/servers/manuel/configure-memory)
+- [Glama](https://glama.ai/mcp/connectors/dev.configure.mcp/configure-memory)
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.configure-dev%2Fconfigure-memory/versions/3.0.0)
+
 ## License
 
 The files in this plugin package are available under the [MIT License](LICENSE). This license covers this wrapper only. Configure's hosted service, backend, and user data are outside its scope and remain subject to their applicable terms.
